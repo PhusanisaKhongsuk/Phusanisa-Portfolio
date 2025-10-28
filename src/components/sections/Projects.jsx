@@ -1,4 +1,7 @@
 import { RevealOnScroll } from '../RevealOnScroll';
+import project1 from '../../assets/project1.png';
+import project2 from '../../assets/project2.png';
+
 export const Projects = () => {
     return <section id="projects" className="min-h-screen flex items-center justify-center py-20">
         <RevealOnScroll>
@@ -8,7 +11,7 @@ export const Projects = () => {
                 </h2>
                 <div className="grid grid-cols-1 gap-6">
                     <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,140,246,0.1)] transition-all">
-                        <h3 className="text-xl font-bold mb-2">Image Compression with DCT and FFT</h3>
+                        <h3 className="text-2xl md:text-3xl font-bold mb-4">Image Compression with DCT and FFT</h3>
                         <p className="text-gray-300 mb-4">A technical implementation and comparative analysis of two frequency-domain compression techniques: Discrete Cosine Transform (DCT) and Fast Fourier Transform (FFT).</p>
                         
                         <div className="mb-6">
@@ -19,6 +22,14 @@ export const Projects = () => {
                                 <li>Developed circular lowpass filtering for FFT-based frequency component reduction</li>
                                 <li>Success Evaluation: Measured quality-compression trade-off using PSNR (Peak Signal-to-Noise Ratio) to quantify visual similarity between original and compressed images, balanced against file size reduction</li>
                             </ul>
+                        </div>
+
+                        <div className="mb-6 overflow-hidden rounded-lg border border-white/10">
+                            <img 
+                                src={project1} 
+                                alt="Image Compression Project"
+                                className="w-full h-auto object-cover hover:scale-105 transition-transform duration-300"
+                            />
                         </div>
 
                         <div className="mb-4">
@@ -38,7 +49,7 @@ export const Projects = () => {
                     </div>
 
                     <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,140,246,0.1)] transition-all">
-                        <h3 className="text-xl font-bold mb-2">Evaluating Image Preprocessing Strategies for Tesseract-Based OCR Systems</h3>
+                        <h3 className="text-2xl md:text-3xl font-bold mb-4">Evaluating Image Preprocessing Strategies for Tesseract-Based OCR Systems</h3>
                         <p className="text-gray-300 mb-4">A comprehensive empirical study evaluating preprocessing pipelines to optimize OCR accuracy across diverse image degradation scenarios.</p>
                         
                         <div className="mb-6">
@@ -51,6 +62,14 @@ export const Projects = () => {
                             </ul>
                         </div>
 
+                        <div className="mb-6 overflow-hidden rounded-lg border border-white/10">
+                            <img 
+                                src={project2} 
+                                alt="OCR Preprocessing Project"
+                                className="w-full h-auto object-cover hover:scale-105 transition-transform duration-300"
+                            />
+                        </div>
+                        
                         <div className="mb-4">
                             <h4 className="text-lg font-bold mb-2">Impact:</h4>
                             <p className="text-gray-300">Provides evidence-based guidelines for selecting optimal OCR preprocessing pipelines, directly applicable to document digitization systems, automated data entry, and accessibility services. Research challenges common assumptions about binarization and demonstrates the importance of degradation-aware preprocessing selection.</p>

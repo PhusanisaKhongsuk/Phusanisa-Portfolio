@@ -14,7 +14,7 @@ export const About = () => {
                 </div>
                 <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
                     <p className="text-gray-300 text-lg mb-6">
-                        I'm Phusanisa Khongsuk, a recent graduate with a Bachelor's degree in Applied Mathematics from Mahidol University International College. 
+                        I recently graduate with a Bachelor's degree in Applied Mathematics from Mahidol University International College. 
                         My academic journey has equipped me with strong analytical and problem-solving skills, which I am eager to apply in real-world scenarios.
                     </p>
 
